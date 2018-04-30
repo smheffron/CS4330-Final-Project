@@ -38,7 +38,7 @@ print(greet(person: "Anna"))
 print(greet(person: "Brian"))
 // Prints "Hello, Brian!"
 ```
-Closures - self contained blocks of functionality that can be passed around (Similar to lambdas in java)
+* Closures - self contained blocks of functionality that can be passed around (Similar to lambdas in java)
 
 ## Name Spaces
 
