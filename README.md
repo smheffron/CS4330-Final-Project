@@ -110,6 +110,7 @@ Similar to Java, uses fields and methods
 Uses class name for creating new instances, does not use a “new” keyword
 To initialize something in a class you can use the init keyword
 Deinit is automatically called, it is used to run code when an object is destroyed
+
 ## Instance reference name in data type (class)
 
 #### Java
@@ -140,17 +141,20 @@ Use the keyword implements to implement an interface
 Support protocols
 Can specify properties that must be implemented, you can use more than one protocol, and must be used in <>
 Use the : to implement a protocol
-Inheritance / extension
+
+## Inheritance / extension
 
 #### Java
 Uses extends keyword to extend a superclass
 Subclasses can use some of the superclass functionality
 Can only extend one class
+
 #### Swift
 Uses a : to extend another class
 Only extend one class
 Subclasses can use some of the superclass functionality
-Reflection
+
+## Reflection
 
 #### Java
 Can obtain the names of all its members, and examine and manipulate a class
@@ -171,7 +175,7 @@ When the reference count reaches zero, the object is destroyed
 
 ## Comparisons of references and values
 
-####Java
+#### Java
 Use == to compare values
 Use .equals to compare references
 
