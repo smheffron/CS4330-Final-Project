@@ -111,6 +111,17 @@ public Actor(String first, String last)
 * To initialize something in a class you can use the init keyword
 * Deinit is automatically called, it is used to run code when an object is destroyed
 
+```Swift
+class student {
+
+  var studentName : String
+  var age : Int
+  var grade : Int
+  }
+  
+let studrecord = student()
+```
+
 ## Instance reference name in data type (class)
 
 #### Java
@@ -118,6 +129,14 @@ public Actor(String first, String last)
 
 #### Swift
 * Uses the “self” keyword
+
+```Swift
+init(name : String, age : Int){
+  self.name = name
+  self.age = age
+}
+```
+
 
 ## Properties
 
