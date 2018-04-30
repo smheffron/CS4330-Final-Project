@@ -43,16 +43,16 @@ print(greet(person: "Brian"))
 ## Name Spaces
 
 #### Java
-Uses packages which are a collection of classes
-You can use “import” in code to use other classes from another package
+Uses packages which are a collection of classes.
+You can use “import” in code to use other classes from another package.
 ```Java
 import java.shape.Rectangle;
 import java.io.File;
 import java.io.FileReader;
 ```
 #### Swift
-Uses Modules which is a single unit of code distribution
-You can use modules by using the keyword “import”
+Uses Modules which is a single unit of code distribution.
+You can use modules by using the keyword “import”.
 ```Swift
 import UIKit
 ```
@@ -102,7 +102,7 @@ public Actor(String first, String last)
     lastName = last;
 }
 ```
-No destructors in Java, taken care of by garbage collection when object has no references
+* No destructors in Java, taken care of by garbage collection when object has no references.
 
 #### Swift
 
