@@ -14,6 +14,7 @@ Shelby Heffron, Ethan Schutzenhofer, Clayton Cornett, Matt Gambino
 * Created to improve object oriented programming for the creation of IOS apps and also desktop apps
 * Improve safety on unexpected behavior in code (Ex. Optionals)
 * Created to replace Objective C for IOS development and C based languages. Also adds easier to read code with more simple syntax 
+
 ## Unique features of the language
 
 #### Java
@@ -23,8 +24,8 @@ Shelby Heffron, Ethan Schutzenhofer, Clayton Cornett, Matt Gambino
 #### Swift
 * Optionals - a type that can be something or be null. Prevents unintended crashing of your program
 * Syntax features that make it easier to read (Example: no semicolons to end lines)  
-Naming parameters
-```Java
+ 
+```Swift
 func greet(person: String) -> String {
    let greeting = "Hello, " + person + "!"
    return greeting
@@ -42,24 +43,50 @@ Closures - self contained blocks of functionality that can be passed around (Sim
 #### Java
 Uses packages which are a collection of classes
 You can use “import” in code to use other classes from another package
-
+```Java
+import java.shape.Rectangle;
+import java.io.File;
+import java.io.FileReader;
+```
 #### Swift
 Uses Modules which is a single unit of code distribution
 You can use modules by using the keyword “import”
+```Swift
+import UIKit
+```
+
 ## Types
 
 #### Java
 * 8 primitive types
-  * Btye, short, int, long, float, double, boolean, char
+  * btye, short, int, long, float, double, boolean, char
 * Reference/class types (Ex. String, Integer)
 
-#### Swift
-Supports the same 8 primitive types
-Has tuples - a group of different values represented as one
-Dictionary types - key values pairs
-Optional type - a variable that can be something or null
-Value types - Structures and Enumerations
+```Java
+byte bite = 12;
+short shrt = 30,000;
+int i = 135;
+long loong = 10,000,000,000,000;
+double doubldouble = 1.234567;
+float yourboat = 1.234;
+boolean waterIsWet = true;
+char c = 'c';
+String s = "Ethan is Awesome";
+Integer num = new Interger();
+```
 
+#### Swift
+* Supports the same 8 primitive types
+* Has tuples - a group of different values represented as one
+* Dictionary types - key values pairs
+* Optional type - a variable that can be something or null
+* Value types - Structures and Enumerations
+
+```Swift
+let bite = 12;
+var tuple = ("Ethan", 20)
+optional : Int? = 2
+```
 ## Classes
 
 #### Java 
