@@ -126,7 +126,12 @@ let studrecord = student()
 
 #### Java
 * Uses the “this” keyword
-
+```Java
+void randomFunction( String name, int age){
+  this.name = name;
+  this.age = age;
+}
+```
 #### Swift
 * Uses the “self” keyword
 
