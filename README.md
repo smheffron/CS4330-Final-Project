@@ -36,35 +36,45 @@ print(greet(person: "Brian"))
 // Prints "Hello, Brian!"
 ```
 Closures - self contained blocks of functionality that can be passed around (Similar to lambdas in java)
-Name Spaces
-Java
+
+## Name Spaces
+
+#### Java
 Uses packages which are a collection of classes
 You can use “import” in code to use other classes from another package
-Swift
+
+#### Swift
 Uses Modules which is a single unit of code distribution
 You can use modules by using the keyword “import”
-Types
-Java
-8 primitive types
-Btye, short, int, long, float, double, boolean, char
-Reference/class types (Ex. String, Integer)
-Swift
+## Types
+
+#### Java
+* 8 primitive types
+* Btye, short, int, long, float, double, boolean, char
+* Reference/class types (Ex. String, Integer)
+
+#### Swift
 Supports the same 8 primitive types
 Has tuples - a group of different values represented as one
 Dictionary types - key values pairs
 Optional type - a variable that can be something or null
 Value types - Structures and Enumerations
-Classes
-Java 
-Has fields and methods, can use instance variable or class variables (Static). Can have modifiers such as public, private, static, final, abstract. 
-Uses constructor that is of the same name as the name of the class. Initial letters should be capitalized. Called using the “new” keyword”. 
-The information sent to the constructor is used to set the fields of the class
+
+## Classes
+
+#### Java 
+* Has fields and methods, can use instance variable or class variables (Static). Can have modifiers such as public, private, static, final, abstract. 
+* Uses constructor that is of the same name as the name of the class. Initial letters should be capitalized. Called using the “new” keyword”. 
+* The information sent to the constructor is used to set the fields of the class
+```Java
 public Actor(String first, String last)
 {
     firstName = first;
     lastName = last;
 }
+```
 No destructors in Java, taken care of by garbage collection when object has no references
-Swift
+
+#### Swift
 
 
