@@ -14,24 +14,27 @@ Shelby Heffron, Ethan Schutzenhofer, Clayton Cornett, Matt Gambino
 * Created to improve object oriented programming for the creation of IOS apps and also desktop apps
 * Improve safety on unexpected behavior in code (Ex. Optionals)
 * Created to replace Objective C for IOS development and C based languages. Also adds easier to read code with more simple syntax 
-  * Unique features of the language
+## Unique features of the language
+
 #### Java
-Garbage collector - runs in the background to get rid of memory that no longer has use
-JVM - Java virtual machine, allows code to be run on any machine that has the JVM
+* Garbage collector - runs in the background to get rid of memory that no longer has use
+* JVM - Java virtual machine, allows code to be run on any machine that has the JVM
+
 #### Swift
-Optionals - a type that can be something or be null. Prevents unintended crashing of your program
-Syntax features that make it easier to read (Example: no semicolons to end lines)  
+* Optionals - a type that can be something or be null. Prevents unintended crashing of your program
+* Syntax features that make it easier to read (Example: no semicolons to end lines)  
 Naming parameters
 ```Java
 func greet(person: String) -> String {
    let greeting = "Hello, " + person + "!"
    return greeting
 }
-```
+
 print(greet(person: "Anna"))
 // Prints "Hello, Anna!"
 print(greet(person: "Brian"))
 // Prints "Hello, Brian!"
+```
 Closures - self contained blocks of functionality that can be passed around (Similar to lambdas in java)
 Name Spaces
 Java
