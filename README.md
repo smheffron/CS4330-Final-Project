@@ -50,7 +50,7 @@ You can use modules by using the keyword “import”
 
 #### Java
 * 8 primitive types
-* Btye, short, int, long, float, double, boolean, char
+  * Btye, short, int, long, float, double, boolean, char
 * Reference/class types (Ex. String, Integer)
 
 #### Swift
