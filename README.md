@@ -6,26 +6,28 @@ Shelby Heffron, Ethan Schutzenhofer, Clayton Cornett, Matt Gambino
 4330 Language Comparison
 
 ## Language Purpose
-### Java
+#### Java
 It was intended to be written for the code to be used on any device
 Response to C and C++, wanted to make coding easier by making it object oriented and run on any platform. Emphasis on reliability over speed. (Ex. features like the Garbage collector).
 It was made to improve/replace with C and C++, it is more developer friendly and easier to manage large programs
-Swift
+#### Swift
 Created to improve object oriented programming for the creation of IOS apps and also desktop apps
 Improve safety on unexpected behavior in code (Ex. Optionals)
 Created to replace Objective C for IOS development and C based languages. Also adds easier to read code with more simple syntax 
 Unique features of the language
-Java
+#### Java
 Garbage collector - runs in the background to get rid of memory that no longer has use
 JVM - Java virtual machine, allows code to be run on any machine that has the JVM
-Swift
+#### Swift
 Optionals - a type that can be something or be null. Prevents unintended crashing of your program
 Syntax features that make it easier to read (Example: no semicolons to end lines)  
 Naming parameters
+```Java
 func greet(person: String) -> String {
    let greeting = "Hello, " + person + "!"
    return greeting
 }
+```
 print(greet(person: "Anna"))
 // Prints "Hello, Anna!"
 print(greet(person: "Brian"))
