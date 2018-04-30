@@ -5,8 +5,8 @@ Shelby Heffron, Ethan Schutzenhofer, Clayton Cornett, Matt Gambino
 
 4330 Language Comparison
 
-Language Purpose
-Java
+## Language Purpose
+### Java
 It was intended to be written for the code to be used on any device
 Response to C and C++, wanted to make coding easier by making it object oriented and run on any platform. Emphasis on reliability over speed. (Ex. features like the Garbage collector).
 It was made to improve/replace with C and C++, it is more developer friendly and easier to manage large programs
