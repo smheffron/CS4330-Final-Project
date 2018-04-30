@@ -141,26 +141,77 @@ init(name : String, age : Int){
   self.age = age
 }
 ```
-
-
 ## Properties
 
 #### Java
 * Have to write your own getters and setters
 * Does not have computed properties
+```Java
+private String name;
 
+public void setName(String name) {
+    this.name = name;
+}
+public String getName() {
+    return name;
+}
+```
 #### Swift
 * Has a defined get and set method
 * Has backing variables
 * Supports computed properties
+```Swift
+get {
+let age : Int
+return age
+}
+set(age){
+ self.age = age
+}
+//Computed properties
+struct Point {
+    var x = 0.0, y = 0.0
+}
 
+struct Size {
+    var width = 0.0, height = 0.0
+}
+
+struct Rect {
+    var origin = Point()
+    var size = Size()
+    var center: Point {
+        get {
+            let centerX = origin.x + (size.width / 2)
+            let centerY = origin.y + (size.height / 2)
+            return Point(x: centerX, y: centerY)
+        }
+        set(newCenter) {
+            origin.x = newCenter.x - (size.width / 2)
+            origin.y = newCenter.y - (size.height / 2)
+        }
+    }
+}
+
+var square = Rect(origin: Point(x: 0.0, y: 0.0),
+                  size: Size(width: 10.0, height: 10.0))
+
+let initialSquareCenter = square.center
+square.center = Point(x: 15.0, y: 15.0)
+
+print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
+// Prints "square.origin is now at (10.0, 10.0)"
+```
 ## Interfaces / protocols
 
 #### Java
 * Supports interfaces, implements as many as it wants
 * Can only contain a method signature and fields
 * Use the keyword implements to implement an interface
-
+```Java
+public class MyController implements MyInterface{
+}
+```
 #### Swift
 * Support protocols
 * Can specify properties that must be implemented, you can use more than one protocol, and must be used in <>
@@ -181,7 +232,7 @@ init(name : String, age : Int){
 ## Reflection
 
 #### Java
-*Can obtain the names of all its members, and examine and manipulate a class
+* Can obtain the names of all its members, and examine and manipulate a class
 * You can see the methods and fields of an unknown type to determine its type
 
 #### Swift
