@@ -216,19 +216,37 @@ public class MyController implements MyInterface{
 * Support protocols
 * Can specify properties that must be implemented, you can use more than one protocol, and must be used in <>
 * Use the : to implement a protocol
+```Swift
+protocol MyProtocol{
+// blah blah
+}
 
+struct Structure : MyProtocol{
+
+}
+```
 ## Inheritance / extension
 
 #### Java
 * Uses extends keyword to extend a superclass
 * Subclasses can use some of the superclass functionality
 * Can only extend one class
-
+```Java
+public class MountainBike extends Bicycle {
+// mountainbike code
+}
+```
 #### Swift
 * Uses a : to extend another class
 * Only extend one class
 * Subclasses can use some of the superclass functionality
+```Swift
+extension SomeType{
+// some code
+}
 
+
+```
 ## Reflection
 
 #### Java
@@ -245,7 +263,7 @@ public class MyController implements MyInterface{
 * When the heap becomes full objects are collected when they have no references to them
 
 #### Swift
-*Swift uses automatic reference counting to keep track of the number of references to an object
+* Swift uses automatic reference counting to keep track of the number of references to an object
 When the reference count reaches zero, the object is destroyed
 
 ## Comparisons of references and values
