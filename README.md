@@ -244,15 +244,19 @@ public class MountainBike extends Bicycle {
 extension SomeType{
 // some code
 }
-
-
 ```
 ## Reflection
 
 #### Java
 * Can obtain the names of all its members, and examine and manipulate a class
 * You can see the methods and fields of an unknown type to determine its type
+```Java
+Method[] methods = MyObject.class.getMethods();
 
+for(Method method : methods){
+    System.out.println("method = " + method.getName());
+}
+```
 #### Swift
 * Allows read only access to properties, however you cannot access computed properties using reflection
 
@@ -270,7 +274,17 @@ When the reference count reaches zero, the object is destroyed
 
 #### Java
 * Use == to compare values
-* Use .equals to compare references
+* Use .equals() to compare references
+```Java
+String foo = new String("abc");
+String bar = new String("abc");
 
+if(foo==bar)
+// False (The objects are not the same)
 
+bar = foo;
+
+if(foo==bar)
+// True (Now the objects are the same)
+```
 
