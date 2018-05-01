@@ -259,7 +259,10 @@ for(Method method : methods){
 ```
 #### Swift
 * Allows read only access to properties, however you cannot access computed properties using reflection
-
+```Swift
+let booClassMirror = Mirror(reflectiong: Book.self)
+print(bookCLassMirror.children.count)
+```
 ## Memory Management
 
 #### Java
