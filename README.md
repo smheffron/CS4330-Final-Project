@@ -291,41 +291,53 @@ if(foo==bar)
 // True (Now the objects are the same)
 ```
 
-Swift
-Use == to compare values
-Uses === to see if two objects have the same reference
-Null/nil references
-Java
-Uses Null
-Does not have any built in features to handle null references
-Swift
-Uses nil
-Has optionals and unwrapping to prevent/deal with null values
-Errors and exception handling
-Java
-Uses try and catch to catch exceptions and uses throw to throw the exception
-Swift
-Errors are represented by values of types that can conform to the Error protocol 
+#### Swift
+* Use == to compare values
+* Uses === to see if two objects have the same reference
+
+## Null/nil references
+
+#### Java
+* Uses Null
+* Does not have any built in features to handle null references
+
+#### Swift
+* Uses nil
+* Has optionals and unwrapping to prevent/deal with null values
+
+## Errors and exception handling
+#### Java
+* Uses try and catch to catch exceptions and uses throw to throw the exception
+* Swift
+* Errors are represented by values of types that can conform to the Error protocol 
+```Java 
 enum VendingMachineError: Error {
    case invalidSelection
    case insufficientFunds(coinsNeeded: Int)
    case outOfStock
 }
-Lambda expressions, closures, or functions as types
-Java
-Uses lambda as a first step towards functional programming
-Uses anonymous inner classes
-Swift
-Uses closures - self contained blocks of functionality that can be passed around
-Has functions as types which allows you to pass functions as parameters to other functions and to return functions
-Implementation of listeners and event handlers
-Java
-Lambdas are used as listener which are tied into the UI
-When a listener event goes off it will go through the chain and trigger the proper event handler
-Swift
-IBOutlet is one specific notation used to connect the UI to the code
-Responders are similar to handlers in Java
-Singleton
-Java
-Constructor is private, and you make a static method that has your return type object of a singleton class
+```
+## Lambda expressions, closures, or functions as types
+
+#### Java
+* Uses lambda as a first step towards functional programming
+* Uses anonymous inner classes
+
+#### Swift
+* Uses closures - self contained blocks of functionality that can be passed around
+* Has functions as types which allows you to pass functions as parameters to other functions and to return functions
+
+## Implementation of listeners and event handlers
+#### Java
+* Lambdas are used as listener which are tied into the UI
+* When a listener event goes off it will go through the chain and trigger the proper event handler
+
+#### Swift
+* IBOutlet is one specific notation used to connect the UI to the code
+* Responders are similar to handlers in Java
+
+## Singleton
+
+#### Java
+* Constructor is private, and you make a static method that has your return type object of a singleton class
  
