@@ -276,8 +276,8 @@ When the reference count reaches zero, the object is destroyed
 ## Comparisons of references and values
 
 #### Java
-* Use == to compare values
-* Use .equals() to compare references
+* Use .equals() to compare values
+* Use == to compare references
 ```Java
 String foo = new String("abc");
 String bar = new String("abc");
