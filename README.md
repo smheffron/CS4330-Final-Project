@@ -340,4 +340,28 @@ enum VendingMachineError: Error {
 
 #### Java
 * Constructor is private, and you make a static method that has your return type object of a singleton class
- 
+ Not all Java Singletons are thread safe because the instance can be accessed through multiple threads.
+Can be lazily instantiated
+If an instance already exist then it returns the reference object if not the object will only be created when needed.
+Swift
+Make the initializer private and make a static constant property which gives other objects access to the singleton object.
+It is possible to make swift singletons thread safe
+Use the keyword ‘Lazy’ to lazily instantiate 
+Procedural Programming
+Java
+Java is strictly an OO-language and can only achieve procedural-like programming is by putting all the code in Main
+Swift 
+Swift is a multi-paradigm language designed for both OO and procedural programming
+Functional Programming
+Java
+In Java 8 functions became first class which means they can be stored as objects, passed as arguments for other functions, and can be returned
+Swift
+Swift can do Functional Programming and swift also treats functions as first class
+Multithreading
+Java
+In Java threads can be created by implementing runnable or extending the Thread class. The UI is not thread safe. 
+Swift 
+Swift’s threading is based off the way Objective-C handled threads.
+Uses the NS option queue in order to execute NS operations in parallel
+  
+
