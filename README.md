@@ -79,11 +79,10 @@ Integer num = new Interger();
 ```
 
 #### Swift
-* Supports the same 8 primitive types
+* Uses named types (classes, structures and data types) whose behavior can be extended
 * Has tuples - a group of different values represented as one
 * Dictionary types - key values pairs
 * Optional type - a variable that can be something or null
-* Value types - Structures and Enumerations
 
 ```Swift
 let bite = 12;
@@ -93,9 +92,10 @@ optional : Int? = 2
 ## Classes
 
 #### Java 
-* Has fields and methods, can use instance variable or class variables (Static). Can have modifiers such as public, private, static, final, abstract. 
-* Uses constructor that is of the same name as the name of the class. Initial letters should be capitalized. Called using the “new” keyword”. 
-* The information sent to the constructor is used to set the fields of the class
+* Has fields and methods,instance variables, class variables (Static). 
+* Java classes can have modifiers such as public, private, static, final, abstract in order to limit access
+* Uses a constructor that is of the same name as the name of the class. The constructor is called using the “new” keyword”. 
+* The information sent to the constructor is used to initialize the fields of the class
 ```Java
 public Actor(String first, String last)
 {
@@ -103,14 +103,14 @@ public Actor(String first, String last)
     lastName = last;
 }
 ```
-* No destructors in Java, taken care of by garbage collection when object has no references.
+* No destructors in Java, this is taken care of by garbage collection when object has no references.
 
 #### Swift
 
 * Similar to Java, uses fields and methods
 * Uses class name for creating new instances, does not use a “new” keyword
 * To initialize something in a class you can use the init keyword
-* Deinit is automatically called, it is used to run code when an object is destroyed
+* Deinit is automatically called, but can be used to run code when an object is destroyed
 
 ```Swift
 class student {
@@ -206,7 +206,7 @@ print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 ## Interfaces / protocols
 
 #### Java
-* Supports interfaces, implements as many as it wants
+* Supports interfaces, allows for the implementation of as many as needed
 * Can only contain a method signature and fields
 * Use the keyword implements to implement an interface
 ```Java
@@ -239,8 +239,9 @@ public class MountainBike extends Bicycle {
 ```
 #### Swift
 * Uses a : to extend another class
-* Only extend one class
+* Can only extend one class
 * Subclasses can use some of the superclass functionality
+* Swift also allows extension of classes you do not have access to in order to add new functionality 
 ```Swift
 extension SomeType{
 // some code
@@ -272,7 +273,7 @@ print(bookCLassMirror.children.count)
 
 #### Swift
 * Swift uses automatic reference counting to keep track of the number of references to an object
-When the reference count reaches zero, the object is destroyed
+* When the reference count reaches zero, the object is destroyed
 
 ## Comparisons of references and values
 
@@ -299,7 +300,7 @@ if(foo==bar)
 ## Null/nil references
 
 #### Java
-* Uses Null
+* Uses null
 * Does not have any built in features to handle null references
 
 #### Swift
@@ -309,7 +310,8 @@ if(foo==bar)
 ## Errors and exception handling
 #### Java
 * Uses try and catch to catch exceptions and uses throw to throw the exception
-* Swift
+
+### Swift
 * Errors are represented by values of types that can conform to the Error protocol 
 ```Java 
 enum VendingMachineError: Error {
@@ -330,8 +332,8 @@ enum VendingMachineError: Error {
 
 ## Implementation of listeners and event handlers
 #### Java
-* Lambdas are used as listener which are tied into the UI
-* When a listener event goes off it will go through the chain and trigger the proper event handler
+* Lambdas are used as listeners which are tied to events
+* When an event goes off it will go through the chain and trigger the proper event handler
 
 #### Swift
 * IBOutlet is one specific notation used to connect the UI to the code
@@ -343,10 +345,10 @@ enum VendingMachineError: Error {
 * Constructor is private, and you make a static method that has your return type object of a singleton class
 * Not all Java Singletons are thread safe because the instance can be accessed through multiple threads.
 * Can be lazily instantiated
-  * If an instance already exist then it returns the reference object if not the object will only be created when needed.
+* If an instance already exist then it returns the reference object if not the object will only be created when needed.
 
 #### Swift
-* Make the initializer private and make a static constant property which gives other objects access to the singleton object.
+* The initializer is private and there is a static constant property which gives other objects access to the singleton object.
 * It is possible to make swift singletons thread safe
 * Use the keyword ‘Lazy’ to lazily instantiate 
 
@@ -364,12 +366,14 @@ enum VendingMachineError: Error {
 * In Java 8 functions became first class which means they can be stored as objects, passed as arguments for other functions, and can be returned
 
 #### Swift
-* Swift can do Functional Programming and swift also treats functions as first class
+* Swift can do Functional Programming 
+* Swift treats functions as first class
 
 ## Multithreading
 
 #### Java
-* In Java threads can be created by implementing runnable or extending the Thread class. The UI is not thread safe. 
+* In Java threads can be created by implementing runnable or extending the Thread class
+* The UI is not thread safe. 
 
 #### Swift 
 * Swift’s threading is based off the way Objective-C handled threads.
