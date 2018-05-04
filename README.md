@@ -311,6 +311,16 @@ if(foo==bar)
 #### Java
 * Uses try and catch to catch exceptions and uses throw to throw the exception
 
+```Java
+try {
+
+} catch (ExceptionType name) {
+
+} catch (ExceptionType name) {
+
+}
+```
+
 ### Swift
 * Errors are represented by values of types that can conform to the Error protocol 
 ```Java 
@@ -335,9 +345,21 @@ enum VendingMachineError: Error {
 * Lambdas are used as listeners which are tied to events
 * When an event goes off it will go through the chain and trigger the proper event handler
 
+```Java
+button.addActionListener(new ActionListener() {
+    public void actionPerformed(ActionEvent evt) {
+        System.out.println("Handled by anonymous class listener");
+    }
+});
+```
+
 #### Swift
 * IBOutlet is one specific notation used to connect the UI to the code
 * Responders are similar to handlers in Java
+
+```Swift
+@IBOutlet weak var nameTextField: UITextField!
+```
 
 ## Singleton
 
@@ -375,8 +397,23 @@ enum VendingMachineError: Error {
 * In Java threads can be created by implementing runnable or extending the Thread class
 * The UI is not thread safe. 
 
+```Java
+public class HelloRunnable implements Runnable {
+
+    public void run() {
+        System.out.println("Hello from a thread!");
+    }
+
+    public static void main(String args[]) {
+        (new Thread(new HelloRunnable())).start();
+    }
+
+}
+```
+
+
 #### Swift 
 * Swift’s threading is based off the way Objective-C handled threads.
-* Uses the NS option queue in order to execute NS operations in parallel
+* Uses the NS operation queue in order to execute NS operations in parallel
   
 
