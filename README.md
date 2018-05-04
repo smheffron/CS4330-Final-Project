@@ -8,24 +8,25 @@ Shelby Heffron, Ethan Schutzenhofer, Clayton Cornett, Matt Gambino
 ## Language Purpose
 
 #### Java
-* It was intended to be written for the code to be used on any device
-* Response to C and C++, wanted to make coding easier by making it object oriented and run on any platform. Emphasis on reliability over speed. (Ex. features like the Garbage collector).
-* It was made to improve/replace with C and C++, it is more developer friendly and easier to manage large programs
+* Java was intended to be written for the code to be used and ran on any device
+* Response to C and C++, wanted to make coding large projects easier by implementing an object oriented style. 
+* Java places an emphasis on reliability and developer friendly features over speed. (Ex. features like the Garbage collector).
 
 #### Swift
-* Created to improve object oriented programming for the creation of IOS apps and also desktop apps
-* Improve safety on unexpected behavior in code (Ex. Optionals)
-* Created to replace Objective C for IOS development and C based languages. Also adds easier to read code with more simple syntax 
+* Swift was created to improve object oriented programming for the creation of iOS and desktop apps
+* Improving safety on unexpected behavior in code played a large role in the creation of Swift (Ex. Optionals)
+* Created to replace Objective C for iOS development and C based languages
+* Swift provides easier to read code with a more simple and logical syntax 
 
 ## Unique features of the language
 
 #### Java
-* Garbage collector - runs in the background to get rid of memory that no longer has use
-* JVM - Java virtual machine, allows code to be run on any machine that has the JVM
+* Garbage collector - runs in the background to free memory that no longer has any use (references)
+* JVM - Java Virtual Machine, allows code to be run on any machine that has the JVM
 
 #### Swift
-* Optionals - a type that can be something or be null. Prevents unintended crashing of your program
-* Syntax features that make it easier to read (Example: no semicolons to end lines)  
+* Optionals - a type that can be something or be null. Prevents unintended crashing of your program due to null references
+* Syntax features that make it easier to read (Example: no semicolons to end lines and named parameters)  
  
 ```Swift
 func greet(person: String) -> String {
@@ -38,21 +39,21 @@ print(greet(person: "Anna"))
 print(greet(person: "Brian"))
 // Prints "Hello, Brian!"
 ```
-* Closures - self contained blocks of functionality that can be passed around (Similar to lambdas in java)
+* Closures in Swift are self contained blocks of functionality that can be passed around (Similar to lambdas in java)
 
 ## Name Spaces
 
 #### Java
-Uses packages which are a collection of classes.
-You can use “import” in code to use other classes from another package.
+* Uses packages which are a collection of classes.
+* You can use “import” in code to use other classes from another package.
 ```Java
 import java.shape.Rectangle;
 import java.io.File;
 import java.io.FileReader;
 ```
 #### Swift
-Uses Modules which is a single unit of code distribution.
-You can use modules by using the keyword “import”.
+* Uses Modules which is a single unit of code distribution.
+* You can use modules by using the keyword “import”.
 ```Swift
 import UIKit
 ```
@@ -61,7 +62,7 @@ import UIKit
 
 #### Java
 * 8 primitive types
-  * btye, short, int, long, float, double, boolean, char
+* btye, short, int, long, float, double, boolean, char
 * Reference/class types (Ex. String, Integer)
 
 ```Java
